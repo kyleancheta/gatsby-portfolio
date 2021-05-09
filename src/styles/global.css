@@ -1,0 +1,286 @@
+/*=======================================================
+       Kyle Ancheta Portfolio Site - Base Styling
+=======================================================*/
+
+@import "../fonts/typography.css";
+@import "colors.css";
+
+* {
+   text-decoration: none;
+}
+
+body {
+   width: 100%;
+   margin: 0;
+}
+
+::selection {
+   background: var(--black-1);
+   color: var(--white-1);
+}
+
+/* :focus {
+   background: var(--blue-200);
+   padding: 4px;
+   border-radius: 2px;
+   outline: 0;
+} */
+
+html, body {
+   /* font-size: 100%; /* 16px */
+   font-size: 125%; /* 18px */
+   font-family: 'HKGrotesk', 'Inter', Helvetica, Arial, sans-serif;
+   background-color: var(--white-2);
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
+
+h1 {
+   width: 100%;
+   font-size: 2rem;
+   font-weight: 700; /* Bold */
+   line-height: 130%;
+   color: var(--black-1);
+   margin: 2rem 0 1rem;
+}
+
+h2 {
+   width: 100%;
+   font-size: 1.75rem;
+   font-weight: 700;
+   line-height: 130%;
+   color: var(--black-1);
+   margin: 1.75rem 0 0.75rem;
+}
+
+h3 {
+   width: 100%;
+   font-size: 1.5rem;
+   font-weight: 700;
+   line-height: 130%;
+   color: var(--black-3);
+   margin: 1.5rem 0 0.5rem;
+}
+
+h4 {
+   width: 100%;
+   font-size: 1.25rem;
+   font-style: italic;
+   font-weight: 400;
+   line-height: 140%;
+   color: var(--black-2);
+   margin: 1.25rem 0 0.5rem;
+}
+
+ol, ul {
+   width: 100%;
+   font-size: 1rem;
+   line-height: 150%;
+   font-weight: 500;
+   color: var(--black-3);
+   opacity: 0.99;
+   margin: 1rem 0 0.5rem;
+   padding-inline-start: 0;
+   padding-left: 1rem;
+}
+
+li {
+   width: 100%;
+   margin: 1rem 0 0.75rem;
+}
+
+p, label {
+   width: 100%;
+   font-size: 1rem;
+   line-height: 150%;
+   font-weight: 500;
+   color: var(--black-3);
+   opacity: 0.99;
+   margin: 1rem 0 0.5rem;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p {
+   margin-top: 0;
+}
+
+label {
+   margin: 0 0 0.75rem;
+}
+
+a {
+   color: var(--black-1);
+   font-weight: 500;
+   /* text-decoration: underline; */
+}
+
+blockquote {
+   width: 100%;
+   font-size: 1.5rem;
+   line-height: 2rem;
+   font-weight: 700;
+   text-align: center;
+   color: var(--black-1);
+   padding: 0.75rem 0;
+   border-top: 2px solid var(--grey-1);
+   border-bottom: 2px solid var(--grey-1);
+   margin: 1.5rem 0 1.5rem;
+}
+
+table {
+   max-width: 100%;
+   font-size: 1rem;
+   font-weight: 500;
+   line-height: 130%;
+   color: var(--black-3);
+   text-align: left;
+   border-spacing: 1rem;
+   border-collapse: collapse;
+   padding: 2px;
+   /* border: solid 1px var(--black-1); */
+   border: none;
+   margin: 1.5rem 0 0.75rem;
+}
+
+table {
+   padding: 1rem 0;
+}
+
+th, td {
+   padding: 0.75rem 2rem 0.75rem 0;
+}
+
+th {
+   font-weight: 600;
+}
+
+table tr:first-child {
+   /* border-bottom: solid 1px var(--black-1); */
+   margin-bottom: 1.25rem;
+}
+
+hr {
+   width: 100%;
+   border-top: 2px solid var(--grey-1);
+   margin: 1rem 0;
+}
+
+img, video, iframe {
+   margin: 1.5rem 0 1rem;
+}
+
+footer {
+   font-size: 1rem;
+   line-height: 100%;
+   font-weight: 400;
+   color: var(--black-3);
+   opacity: 0.99;
+   margin: 1rem 0 0.5rem;
+}
+
+/*===============================================
+                     Classes
+===============================================*/
+
+h1.home-title {
+   color: var(--black-4);
+   margin: 1rem 0 0;
+}
+
+h1.home-title span {
+   color: var(--black-1);
+}
+
+h2.subtle-heading {
+   color: var(--grey-4);
+   line-height: 150%;
+   margin: 1rem 0 0.5rem;
+}
+
+h2.more-cases {
+   margin-bottom: 0.75rem;
+}
+
+span.sneaky-note {
+   font-size: 0.625rem;
+   font-weight: 400;
+   line-height: 100%;
+}
+
+ul.no-bullets {
+   list-style-type: none;
+}
+
+ul.list-links {
+   font-size: 1.5rem;
+   line-height: 130%;
+   color: var(--black-1);
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+li.list-link {
+   font-size: 1.25rem;
+   font-weight: 500;
+   margin: 0 0 0.75rem;
+}
+
+img.with-label, video.with-label {
+   margin: 1rem 0 0.1rem;
+}
+
+/*===============================================
+                  Tablet View
+===============================================*/
+
+@media screen and (min-width: 768px) {
+
+}
+
+/*===============================================
+            Laptop / Small Desktop View
+===============================================*/
+
+@media screen and (min-width: 1024px) {
+
+   html, body {
+      font-size: 125%; /* 20px */
+   }
+
+   blockquote {
+      border-top: 3px solid var(--grey-1);
+      border-bottom: 3px solid var(--grey-1);
+   }
+
+   hr {
+      border-top: 3px solid var(--grey-1);
+   }
+
+}
+
+/*===============================================
+                  Desktop View
+===============================================*/
+
+@media screen and (min-width: 1440px) {
+
+   html, body {
+      font-size: 137.5%; /* 22px */
+   }
+
+}
+
+/*===============================================
+                  Big Desktop View
+===============================================*/
+
+@media screen and (min-width: 1800px) {
+
+   html, body {
+      font-size: 143.75%; /* 23px - yes, there's a fucking difference between 24px and 23px... */
+   }
+
+   p {
+      line-height: 160%;
+   }
+}
